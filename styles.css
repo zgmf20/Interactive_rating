@@ -1,0 +1,76 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-dark-black: hsl(30, 0%, 5%);
+    --color-orange: hsl(30, 100%, 45%);
+    --color-grayish: hsl(0, 0%, 50%);
+    --color-dark-gray: hsl(0, 0%, 25%);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--color-black);
+}
+
+.container {
+    width: 60%;
+    height: 60%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rat-card {
+    max-width: 30%;
+    height:inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-dark-black);
+    border-radius: 16px;
+    box-shadow: 0% 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.rat-icon {
+    border-radius: 20px;
+    color: var(--color-dark-gray);
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.rat-title {
+    /*max-width: 600px;*/
+    display: flex;
+    align-items: left;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+.rat-desc {
+    color: var(--color-grayish);
+    font-size: small;
+}
+
+.rat-btn {
+    color: var(--color-grayish);
+    font-size: small;
+}
+
+.rat-btn:hover,
+.rat-btn:focus {
+    color: var(--color-white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--color-grayish);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
