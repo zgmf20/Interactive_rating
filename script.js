@@ -20,5 +20,7 @@ submitButton.addEventListener('click', () => {
     ratingResult.textContent = selectedRating;
     ratingCard.hidden = true;
     thankYouCard.hidden = false;
+  } else {
+    alert('Please select a rating before submitting.');
   }
 });
