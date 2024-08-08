@@ -126,6 +126,10 @@ body {
     margin-bottom: 2rem;
   }
   
+  #thank-you-card {
+    display: none;
+  }
+
   @media (max-width: 375px) {
     .container {
       padding: 1rem;
