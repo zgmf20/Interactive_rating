@@ -5,51 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
-  
+  <script src="script.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
- 
-  </style>
 </head>
 
 <body>
 
   <!-- Rating state start -->
-  <div class="container">
-    <div class="rat-card" id="card-st">
-      <img src="images/icon-star.svg" alt="star" class="rat-icon" />
-      <h1 class="rat-title">How did we do?</h1>
-      <div class="rat-desc">
+  <main class="container">
+    <div class="star-icon">
+      <img src="images/icon-star.svg" alt="Star icon">
+    </div>
+      <h1>How did we do?</h1>
+      <p>
         Please let us know how we did with your support request. 
         All feedback is appreciated to help us improve our offering!
+      </p>
+      <div class="rating-buttons">
+        <button class="rating_btn" data-value="1">1</button>
+        <button class="rating_btn" data-value="2">2</button>
+        <button class="rating_btn" data-value="3">3</button>
+        <button class="rating_btn" data-value="4">4</button>
+        <button class="rating_btn" data-value="5">5</button>
       </div>
-      <div class="rat_btn_list">
-        <button id="rat_1" class="rat_btn" onselect="false" value="1">1</button>
-        <button id="rat_2" class="rat_btn" onselect="false" value="2">2</button>
-        <button id="rat_3" class="rat_btn" onselect="false" value="3">3</button>
-        <button id="rat_4" class="rat_btn" onselect="false" value="4">4</button>
-        <button id="rat_5" class="rat_btn" onselect="false" value="5">5</button>
-      </div>
-      <div class="sub_btn"><button id="sub" aria-controls="rat-ans">Submit</button></div>
-        
+        <button id="submit-button" disabled>Submit</button>
     </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-    <div class="rat-card" id="card-ed" hidden>
-      <img src="images/illustration-thank-you.svg" alt="thank you" class="rat-img-thx" />
-      <div class="rat-result">You selected <span id="rat-ans" aria-labelledby="sub"></span><!-- Add rating here --> out of 5</div>
-      <h1 class="rat-title">Thank you!</h1>
-      <div class="rat-desc">
+    <div class="card thank-you" id="thank-you-card" hidden>
+      <img src="images/illustration-thank-you.svg" alt="thank you" />
+      <p class="result">You selected <span id="rating-result"></span><!-- Add rating here --> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>
         We appreciate you taking the time to give a rating. 
         If you ever need more support, don’t hesitate to get in touch!
-      </div>
+      </p>
     </div>
   <!-- Thank you state end -->
 
@@ -58,7 +53,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">zgmf20</a>.
     </div>
-  </div>
+  </main>
 </body>
 
 </html>
